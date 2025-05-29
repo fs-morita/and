@@ -25,7 +25,8 @@ header {
   background: #fff1e6;
   padding: 24px;
   text-align: center;
-  border-bottom: 3px solid #ffdab9;
+  border: 3px solid #ffdab9;
+  border-radius: 15px;
 }
 
 header h1 {
@@ -63,7 +64,7 @@ h2::after {
   left: 0;
   width: 80px;
   height: 4px;
-  background-color: #ffc0cb; /* ピンク系 */
+  background-color: #F5EC34; /* ピンク系 */
   border-radius: 2px;
 }
 
@@ -133,7 +134,7 @@ a[href^="tel:"] {
   }
 
   header h1 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   h2 {
