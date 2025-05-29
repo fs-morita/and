@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 960px;
   width: 100%;
-  padding: 24px;
+  /* padding: 24px; */
   margin: 0 auto;
 }
 
@@ -25,8 +25,9 @@ header {
   background: #fff1e6;
   padding: 24px;
   text-align: center;
-  border: 3px solid #ffdab9;
-  border-radius: 15px;
+  /* border-bottom: 3px solid #ffdab9; */
+  /* border: 3px solid #ffdab9; */
+  /* border-radius: 15px; */
 }
 
 header h1 {
