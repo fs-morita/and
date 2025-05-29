@@ -25,7 +25,7 @@ header {
   background: #fff1e6;
   padding: 24px;
   text-align: center;
-  /* border-bottom: 3px solid #ffdab9; */
+  border-bottom: 3px solid #ffdab9;
   /* border: 3px solid #ffdab9; */
   /* border-radius: 15px; */
 }
@@ -98,6 +98,124 @@ header .logo {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #333;
+}
+
+.support_block {
+  margin-bottom: 30px;
+}
+
+.support_title {
+    color: #666;
+}
+
+.staff-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.staff-card {
+  display: flex;
+  gap: 30px;
+  background: #fff7f0;
+  border: 1px solid #ffd5b3;
+  border-radius: 16px;
+  padding: 20px;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.staff-card img {
+  width: 200px;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.staff-info h3 {
+  margin-top: 0;
+  color: #d2691e;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.staff-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-hours {
+  padding: 32px 0;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.hours-table th {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ffdab9;   
+}
+
+.hours-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ffdab9;
+}
+
+.hours-table th {
+  background-color: #fff1e6;
+  color: #444;
+  width: 80px;
+}
+
+.facility-details {
+  padding: 32px 0;
+}
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.details-table th,
+.details-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ffdab9;
+}
+
+.details-table th {
+  background-color: #fff1e6;
+  color: #444;
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .staff-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .staff-card img {
+    width: 200px;
+  }
+
+  .hours-table th,
+  .hours-table td,
+  .details-table th,
+  .details-table td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 }
 
 /* セクション全体 */
@@ -176,14 +294,13 @@ a {
 }
 
 /* 問い合わせ電話 */
-a[href^="tel:"] {
+/* a[href^="tel:"] {
   display: inline-block;
-  margin-top: 12px;
   padding: 10px 16px;
   background-color: #ffd5b3;
   border-radius: 6px;
   color: #333;
-}
+} */
 
 /* レスポンシブ */
 @media (max-width: 768px) {
