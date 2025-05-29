@@ -1,66 +1,146 @@
+/* 共通設定 */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #333;
-  background: #fff;
+  background-color: #fffaf5;
 }
 
+/* レイアウト */
 .container {
-    width: 700px;
-    margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  padding: 24px;
+  margin: 0 auto;
 }
 
+/* ヘッダー */
 header {
-  background: #ffefd5;
-  padding: 20px;
+  background: #fff1e6;
+  padding: 24px;
   text-align: center;
+  border-bottom: 3px solid #ffdab9;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: #d2691e;
 }
 
-header ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+header .logo {
+  max-width: 200px;
+  height: auto;
+  margin: 16px auto;
+  display: block;
 }
 
-header li {
-  background: #f08080;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 0.9rem;
-}
-
+/* セクション全体 */
 section {
-  padding: 20px;
+  padding: 32px 0;
   border-bottom: 1px solid #eee;
 }
 
+/* セクションタイトル */
 h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 12px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: #ffc0cb; /* ピンク系 */
+  border-radius: 2px;
+}
+
+/* 小見出し */
+h3 {
   font-size: 1.2rem;
-  color: #2c3e50;
-  margin-bottom: 10px;
+  color: #666;
+  margin-top: 24px;
 }
 
-img {
+/* テキスト */
+p, div {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+/* テーブル */
+table {
   width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin: 10px 0;
+  border-collapse: collapse;
+  margin-top: 12px;
 }
 
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #fdf0f5;
+  color: #444;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ffe4e1;
+  display: block;
+  margin: 16px 0;
+}
+
+/* リンク */
 a {
   color: #1e90ff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+/* 問い合わせ電話 */
+a[href^="tel:"] {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #ffd3da;
+  border-radius: 6px;
+  color: #333;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
 }
