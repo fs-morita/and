@@ -198,6 +198,25 @@ header .logo {
   width: 120px;
 }
 
+.site-footer {
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  background-color: #fffaf5;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .staff-card {
     flex-direction: column;
@@ -221,6 +240,9 @@ header .logo {
 /* セクション全体 */
 section {
   padding: 32px 0;
+}
+
+section:not(:last-of-type) {
   border-bottom: 1px solid #eee;
 }
 
