@@ -35,11 +35,68 @@ header h1 {
   color: #d2691e;
 }
 
+header h1 .subtitle {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #555;
+  margin-left: 12px;
+  vertical-align: middle;
+}
+
 header .logo {
   max-width: 200px;
   height: auto;
   margin: 16px auto;
   display: block;
+}
+
+.message-box {
+  background: #fff7f0;
+  border: 2px solid #ffd5b3;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.message-box div {
+  margin-bottom: 10px;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+  justify-content: center;
+}
+
+.feature-card {
+  flex: 1 1 280px;
+  background: #fff7f0;
+  border: 1px solid #ffd5b3;
+  border-radius: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.feature-card h3,
+.message-box h3 {
+  font-size: 1rem;
+  color: #d2691e;
+  margin-bottom: 8px;
+  position: relative;
+  margin-top: 0;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
 }
 
 /* セクション全体 */
