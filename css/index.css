@@ -205,7 +205,7 @@ header .logo {
 .site-footer {
   margin-top: 40px;
   border-top: 1px solid #ddd;
-  background-color: #fffaf5;
+  background-color: #fafafa;
 }
 
 .footer-container {
@@ -248,7 +248,7 @@ section {
 }
 
 section:not(:last-of-type) {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #ddd;
 }
 
 /* セクションタイトル */
@@ -324,15 +324,6 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
-
-/* 問い合わせ電話 */
-/* a[href^="tel:"] {
-  display: inline-block;
-  padding: 10px 16px;
-  background-color: #ffd5b3;
-  border-radius: 6px;
-  color: #333;
-} */
 
 /* レスポンシブ */
 @media (max-width: 768px) {
