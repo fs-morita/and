@@ -11,25 +11,22 @@ body {
   padding: 0;
   line-height: 1.8;
   color: #333;
-  background-color: #fffaf5;
+  background-color: #fafafa;
 }
 
 /* レイアウト */
 .container {
   max-width: 960px;
   width: 100%;
-  /* padding: 12px; */
   margin: 0 auto;
 }
 
 /* ヘッダー */
 header {
-  background: #fff1e6;
+  background: #FEFBD5;
   padding: 24px;
   text-align: center;
-  border-bottom: 3px solid #ffdab9;
-  /* border: 3px solid #ffdab9; */
-  /* border-radius: 15px; */
+  border-bottom: 3px solid #F5EC34;
 }
 
 header h1 {
@@ -78,8 +75,8 @@ header .logo {
 
 .feature-card {
   flex: 1 1 280px;
-  background: #fff7f0;
-  border: 1px solid #ffd5b3;
+  background: #ffffff;
+  border: 2px solid #F5EC34;
   border-radius: 16px;
   padding: 16px 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -99,7 +96,8 @@ header .logo {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #333;
+  color: #555;
+  font-weight: bold;
 }
 
 .support_block {
@@ -107,7 +105,8 @@ header .logo {
 }
 
 .support_title {
-    color: #666;
+    color: #555;
+    font-weight: bold;
 }
 
 .staff-intro {
@@ -120,8 +119,8 @@ header .logo {
 .staff-card {
   display: flex;
   gap: 30px;
-  background: #fff7f0;
-  border: 1px solid #ffd5b3;
+  background: #ffffff;
+  border: 2px solid #eee;
   border-radius: 16px;
   padding: 20px;
   align-items: flex-start;
@@ -137,9 +136,10 @@ header .logo {
 
 .staff-info h3 {
   margin-top: 0;
-  color: #d2691e;
+  color: #666;
   font-size: 1.2rem;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .staff-info p {
@@ -162,18 +162,18 @@ header .logo {
 .hours-table th {
   padding: 12px;
   text-align: center;
-  border: 1px solid #ffdab9;   
+  border: 1px solid white;   
 }
 
 .hours-table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #ffdab9;
+  border: 1px solid #aaa;
 }
 
 .hours-table th {
-  background-color: #fff1e6;
-  color: #444;
+  background-color: #aaa;
+  color: #ffffff;
   width: 100px;
 }
 
@@ -190,16 +190,16 @@ header .logo {
 .details-table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #ffdab9;
+  border: 1px solid #aaa;
 }
 
 .details-table th {
-  background-color: #fff1e6;
-  color: #444;
+  background-color: #aaa;
+  color: white;
   width: 140px;
   padding: 12px;
   text-align: center;
-  border: 1px solid #ffdab9;
+  border: 1px solid white;
 }
 
 .site-footer {
@@ -267,7 +267,7 @@ h2::after {
   left: 0;
   width: 80px;
   height: 4px;
-  background-color: #ffd5b3; /* ピンク系 */
+  background-color: #F5EC34;
   border-radius: 2px;
 }
 
@@ -308,9 +308,14 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 2px solid #ffd5b3;
   display: block;
   margin: 16px 0;
+}
+header img {
+  border: 2px solid #F5EC34;
+}
+.staff-card img {
+  border: 1px solid #eee;
 }
 
 /* リンク */
