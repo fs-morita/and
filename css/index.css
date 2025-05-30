@@ -174,7 +174,7 @@ header .logo {
 .hours-table th {
   background-color: #fff1e6;
   color: #444;
-  width: 80px;
+  width: 100px;
 }
 
 .facility-details {
@@ -187,7 +187,6 @@ header .logo {
   margin-top: 16px;
 }
 
-.details-table th,
 .details-table td {
   padding: 12px;
   text-align: left;
@@ -197,7 +196,10 @@ header .logo {
 .details-table th {
   background-color: #fff1e6;
   color: #444;
-  width: 120px;
+  width: 140px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ffdab9;
 }
 
 .site-footer {
