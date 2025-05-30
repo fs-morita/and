@@ -11,7 +11,7 @@ body {
   padding: 0;
   line-height: 1.8;
   color: #333;
-  background-color: #fefefe;
+  background-color: white;
 }
 
 /* レイアウト */
@@ -32,7 +32,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2rem;
-  color: #d2691e;
+  color: orange;
 }
 
 header h1 .subtitle {
@@ -86,7 +86,7 @@ header .logo {
 .feature-card h3,
 .message-box h3 {
   font-size: 1rem;
-  color: #d2691e;
+  color: orange;
   margin-bottom: 8px;
   position: relative;
   margin-top: 0;
@@ -105,7 +105,7 @@ header .logo {
 }
 
 .support_title {
-    color: #555;
+    color: #666;
     font-weight: bold;
 }
 
@@ -119,8 +119,8 @@ header .logo {
 .staff-card {
   display: flex;
   gap: 30px;
-  background: #ffffff;
-  border: 2px solid #eee;
+  background: #f9f9f9;
+  border: 2px solid #ececec;
   border-radius: 16px;
   padding: 20px;
   align-items: flex-start;
@@ -168,11 +168,11 @@ header .logo {
 .hours-table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
 }
 
 .hours-table th {
-  background-color: #aaa;
+  background-color: #ccc;
   color: #ffffff;
   width: 100px;
 }
@@ -190,11 +190,11 @@ header .logo {
 .details-table td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #aaa;
+  border: 1px solid #ccc;
 }
 
 .details-table th {
-  background-color: #aaa;
+  background-color: #ccc;
   color: white;
   width: 140px;
   padding: 12px;
@@ -205,7 +205,7 @@ header .logo {
 .site-footer {
   margin-top: 40px;
   border-top: 1px solid #ddd;
-  background-color: #fafafa;
+  background-color: white;
 }
 
 .footer-container {
