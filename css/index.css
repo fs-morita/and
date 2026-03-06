@@ -251,6 +251,9 @@ div {
 
 .service-summary .support_block {
   counter-increment: summary-item;
+  --badge-top: 12px;
+  --badge-left: 14px;
+  --badge-size: 34px;
   position: relative;
   margin-bottom: 12px;
   padding: 16px 16px 14px 62px;
@@ -264,10 +267,10 @@ div {
 .service-summary .support_block::before {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 14px;
-  width: 34px;
-  height: 34px;
+  top: var(--badge-top);
+  left: var(--badge-left);
+  width: var(--badge-size);
+  height: var(--badge-size);
   border-radius: 999px;
   background: linear-gradient(135deg, #8dbf3e 0%, #4f8f13 100%);
 }
@@ -275,18 +278,16 @@ div {
 .service-summary .support_block::after {
   content: "0" counter(summary-item);
   position: absolute;
-  top: 12px;
-  left: 14px;
-  width: 34px;
-  height: 34px;
+  top: calc(var(--badge-top) + (var(--badge-size) / 2));
+  left: calc(var(--badge-left) + (var(--badge-size) / 2));
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(1px, 1px);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1;
   font-size: 0.82rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
   pointer-events: none;
 }
 
@@ -619,25 +620,16 @@ a:hover {
   }
 
   .service-summary .support_block {
+    --badge-top: 10px;
+    --badge-left: 10px;
+    --badge-size: 30px;
     padding: 12px 10px 10px 50px;
     border-radius: 12px;
     margin-bottom: 10px;
   }
 
-  .service-summary .support_block::before {
-    top: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-  }
-
   .service-summary .support_block::after {
-    top: 10px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
     font-size: 0.76rem;
-    transform: translate(0px, 1px);
   }
 
   .service-summary .support_title {
