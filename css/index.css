@@ -105,6 +105,27 @@ header .logo {
   margin: 24px 0 16px;
 }
 
+.hero-overview {
+  margin-top: 0;
+}
+
+.hero-overview-title {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  color: #3d5d22;
+  text-align: left;
+}
+
+.hero-overview-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #f5b700 0%, #79b20a 100%);
+}
+
 .feature-card {
   background: var(--bg-card);
   border: 1px solid #efe7b9;
@@ -214,6 +235,67 @@ div {
   font-weight: 700;
 }
 
+.service-summary {
+  background:
+    linear-gradient(180deg, #f7fbef 0%, #ffffff 100%);
+  border-color: #d9e5bd;
+}
+
+.service-summary h2 {
+  margin-bottom: 18px;
+}
+
+.service-summary {
+  counter-reset: summary-item;
+}
+
+.service-summary .support_block {
+  counter-increment: summary-item;
+  position: relative;
+  margin-bottom: 12px;
+  padding: 16px 16px 14px 62px;
+  border-left: 0;
+  border: 1px solid #dbe7c5;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 16px rgba(54, 76, 32, 0.07);
+}
+
+.service-summary .support_block::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #8dbf3e 0%, #4f8f13 100%);
+}
+
+.service-summary .support_block::after {
+  content: "0" counter(summary-item);
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(1px, 1px);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+}
+
+.service-summary .support_title {
+  margin-bottom: 4px;
+  color: #2f4e12;
+  font-size: 1rem;
+}
+
 .staff-intro {
   display: grid;
   gap: 14px;
@@ -277,6 +359,7 @@ div {
 }
 
 .room-card img {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 11;
   object-fit: cover;
@@ -285,10 +368,15 @@ div {
 }
 
 .room-card figcaption {
-  padding: 10px 12px;
+  min-height: 44px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   color: #3d5e21;
   text-align: center;
+  line-height: 1.35;
 }
 
 .hours-title {
@@ -314,6 +402,20 @@ div {
 
 .hours-table {
   table-layout: fixed;
+}
+
+.table-frame {
+  margin-top: 10px;
+  border: 1px solid #dce4cb;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.table-frame table {
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .hours-note {
@@ -417,13 +519,27 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     width: min(1080px, calc(100% - 16px));
     margin-top: 10px;
   }
 
   header {
-    padding: 16px 12px;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  header::before,
+  header::after {
+    display: none;
   }
 
   section {
@@ -443,6 +559,89 @@ a:hover {
   div {
     font-size: 0.9rem;
     line-height: 1.65;
+  }
+
+  .hero-overview {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #f1de98;
+  }
+
+  .hero-overview-title {
+    font-size: 1.02rem;
+    margin-bottom: 8px;
+  }
+
+  .hero-overview-title::after {
+    width: 54px;
+    height: 3px;
+    margin-top: 6px;
+  }
+
+  .hero-brand {
+    background: linear-gradient(135deg, #fffdf0 0%, #fff5ca 58%, #ffecc8 100%);
+    border: 1px solid #f4df89;
+    border-radius: 20px;
+    padding: 16px 12px;
+    text-align: center;
+    box-shadow: 0 10px 18px rgba(51, 73, 34, 0.12);
+  }
+
+  .feature-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 0 10px;
+  }
+
+  .feature-cards .feature-card:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+
+  .hero-overview .feature-card {
+    padding: 10px 8px;
+    border-radius: 12px;
+  }
+
+  .hero-overview .feature-card h3 {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+  }
+
+  .hero-overview .feature-card p {
+    font-size: 0.84rem;
+    line-height: 1.55;
+  }
+
+  .hero-overview .concept-card {
+    margin: 0;
+  }
+
+  .service-summary .support_block {
+    padding: 12px 10px 10px 50px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .service-summary .support_block::before {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .service-summary .support_block::after {
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.76rem;
+    transform: translate(1px, 2px);
+  }
+
+  .service-summary .support_title {
+    font-size: 0.94rem;
   }
 
   .staff-intro {
