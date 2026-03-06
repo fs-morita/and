@@ -697,9 +697,10 @@ a:hover {
     grid-auto-columns: minmax(250px, 78vw);
     gap: 10px;
     margin-top: 14px;
-    padding: 2px 2px 8px;
+    padding: 2px 11vw 8px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    scroll-padding-inline: 11vw;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -733,7 +734,7 @@ a:hover {
 
   .room-card {
     border-radius: 14px;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
   }
 
   .room-card img {
