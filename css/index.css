@@ -380,6 +380,24 @@ div {
   line-height: 1.35;
 }
 
+.slider-dots {
+  display: none;
+}
+
+.slider-dot {
+  appearance: none;
+  border: 0;
+  border-radius: 999px;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background: #c5d3aa;
+}
+
+.slider-dot.is-active {
+  background: #5f8f1c;
+}
+
 .hours-title {
   margin-top: 2px;
   margin-bottom: 0;
@@ -646,6 +664,8 @@ a:hover {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   .staff-card {
@@ -681,6 +701,34 @@ a:hover {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .staff-intro::-webkit-scrollbar,
+  .room-gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slider-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+
+  .slider-dot {
+    width: 7px;
+    height: 7px;
+    background: #bfcda3;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+
+  .slider-dot.is-active {
+    transform: scale(1.2);
+    background: #648f2c;
   }
 
   .room-card {
