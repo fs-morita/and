@@ -409,8 +409,8 @@ div {
   margin-top: 4px;
   margin-bottom: 12px;
   font-size: 1.25rem;
-  font-weight: 700;
-  color: #e87900;
+  font-weight: 400;
+  color: #111111;
 }
 
 .hours-table th,
@@ -477,13 +477,23 @@ table td {
 }
 
 a {
-  color: var(--primary);
+  color: #111111;
   text-decoration: none;
   font-weight: 700;
 }
 
 a:hover {
-  color: #da6d00;
+  color: #111111;
+}
+
+a[href^="tel:"] {
+  color: #1e63d6;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a[href^="tel:"]:hover {
+  color: #174eaa;
 }
 
 .site-footer {
