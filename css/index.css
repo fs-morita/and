@@ -62,7 +62,7 @@ a[href^="tel:"] {
   border-bottom: 1px solid var(--line);
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.83) 43%, rgba(255, 255, 255, 0.38) 72%, rgba(255, 255, 255, 0.12) 100%),
-    url("../img/rooms/guidanceTrainingRoom.webp") center / cover no-repeat;
+    url("../img/topHero.webp") center / cover no-repeat;
 }
 
 .site-hero::after {
@@ -660,7 +660,7 @@ td {
     padding: 24px 18px 42px;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.86) 42%, rgba(255, 255, 255, 0.4) 100%),
-      url("../img/rooms/guidanceTrainingRoom.webp") center / cover no-repeat;
+      url("../img/topHero.webp") center / cover no-repeat;
   }
 
   .hero-brand {
