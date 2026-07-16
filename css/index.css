@@ -1733,7 +1733,14 @@ figcaption {
   }
 
   .hero {
-    padding: 42px 0 78px;
+    display: flex;
+    min-height: calc(100svh - var(--header-height));
+    align-items: center;
+    padding: clamp(44px, 8vh, 64px) 0 clamp(64px, 10vh, 88px);
+    background:
+      linear-gradient(180deg, rgba(255, 253, 245, 0.62) 0%, rgba(255, 253, 245, 0.48) 48%, rgba(255, 253, 245, 0.82) 100%),
+      linear-gradient(90deg, rgba(255, 253, 245, 0.45) 0%, rgba(255, 253, 245, 0.18) 100%),
+      url("../img/topHero.webp") 78% center / cover no-repeat;
   }
 
   .hero::after {
@@ -1741,7 +1748,7 @@ figcaption {
   }
 
   .hero-inner {
-    gap: 40px;
+    display: block;
   }
 
   .hero-kicker {
@@ -1775,30 +1782,7 @@ figcaption {
   }
 
   .hero-visual {
-    padding: 10px 0 0 10px;
-  }
-
-  .hero-visual::before {
-    inset: 0 35% 28% 0;
-    border-radius: 24px;
-  }
-
-  .hero-photo {
-    height: min(88vw, 350px);
-    min-height: 300px;
-    border-width: 6px;
-    border-radius: 24px 24px 70px 24px;
-  }
-
-  .hero-photo img {
-    object-position: 80% center;
-  }
-
-  .hero-badge {
-    right: -10px;
-    bottom: -18px;
-    width: 74px;
-    border-width: 6px;
+    display: none;
   }
 
   .section {
