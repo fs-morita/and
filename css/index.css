@@ -1048,6 +1048,13 @@ figcaption {
   line-height: 1.9;
 }
 
+.map-copy > p.map-access-note {
+  margin-top: -14px;
+  color: var(--muted, var(--text));
+  font-size: 0.92rem;
+  font-weight: 400;
+}
+
 .button-map {
   font-size: 0.94rem;
 }
